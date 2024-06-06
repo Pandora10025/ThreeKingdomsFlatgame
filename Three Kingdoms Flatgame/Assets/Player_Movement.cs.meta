@@ -3,7 +3,12 @@ guid: 0d8e609b4f805da4da0f9dc25999c8ba
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player_icon: {instanceID: 0}
+  - tenga_icon: {instanceID: 0}
+  - solas_icon: {instanceID: 0}
+  - auris_icon: {instanceID: 0}
+  - camPos: {fileID: 6729905720332483736, guid: 623eb99ab27f5354f966d3298200d5ba, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

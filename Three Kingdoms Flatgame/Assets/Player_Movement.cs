@@ -10,13 +10,19 @@ public class Player_Movement : MonoBehaviour
     public SpriteRenderer solas_icon;
     public SpriteRenderer auris_icon;
 
+    // starting position
     Vector3 startPos;
-      
+
+    // game camera
+    public GameObject camera; 
+
     // Start is called before the first frame update
     void Start()
     {
         startPos = new Vector3(17f, -7f, -1f);
         this.transform.position = startPos;
+
+       
 
     }
 
