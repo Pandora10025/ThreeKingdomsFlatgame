@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
@@ -13,8 +14,7 @@ public class Player_Movement : MonoBehaviour
     // starting position
     Vector3 startPos;
 
-    // game camera
-    public GameObject camera; 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class Player_Movement : MonoBehaviour
         startPos = new Vector3(17f, -7f, -1f);
         this.transform.position = startPos;
 
-       
 
+        
     }
 
     // Update is called once per frame
