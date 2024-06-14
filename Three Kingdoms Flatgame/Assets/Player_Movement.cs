@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
     // player Icons 
     public SpriteRenderer player_icon;
-    public SpriteRenderer tenga_icon;
-    public SpriteRenderer solas_icon;
-    public SpriteRenderer auris_icon;
+    public GameObject tenga_icon;
+    public GameObject solas_icon;
+    public GameObject auris_icon;
 
     // starting position
     Vector3 startPos;
 
-    
+    // Kingdom Boundary 
+    public GameObject solasBoundary;
+    public GameObject aurisBoundary;
+    public GameObject tengaBoundary;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +26,7 @@ public class Player_Movement : MonoBehaviour
         startPos = new Vector3(17f, -7f, -1f);
         this.transform.position = startPos;
 
-
+           solasBoundary.GetComponent<Collider2D>();
         
     }
 
@@ -45,5 +49,8 @@ public class Player_Movement : MonoBehaviour
         {
             this.transform.localPosition += new Vector3(0, -0.01f, 0);
         }
+
+
     }
 }
+
