@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - tenga_boundary
+  - solas_boundary
+  - auris_boundary
   layers:
   - Default
   - TransparentFX
