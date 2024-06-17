@@ -7,6 +7,15 @@ TagManager:
   - tenga_boundary
   - solas_boundary
   - auris_boundary
+  - forest
+  - farm
+  - beach
+  - coast
+  - arena
+  - open_boundary
+  - solas_market
+  - tenga_market
+  - auris_market
   layers:
   - Default
   - TransparentFX
