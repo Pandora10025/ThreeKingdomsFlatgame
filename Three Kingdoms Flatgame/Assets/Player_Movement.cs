@@ -23,6 +23,7 @@ public class Player_Movement : MonoBehaviour
     public AudioClip _beach;
     public AudioClip _arena;
     public AudioClip _market;
+    public AudioClip _desert;
 
     //Audio Sources
     public AudioSource forest;
@@ -31,6 +32,7 @@ public class Player_Movement : MonoBehaviour
     public AudioSource farm;
     public AudioSource arena;
     public AudioSource market;
+    public AudioSource desert;
 
     //Bools
     bool inAuris = false;
@@ -53,19 +55,19 @@ public class Player_Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.UpArrow))
         {
-            this.transform.localPosition += new Vector3(0,0.05f, 0);
+            this.transform.localPosition += new Vector3(0,0.01f, 0);
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.localPosition += new Vector3(-0.05f, 0, 0);
+            this.transform.localPosition += new Vector3(-0.01f, 0, 0);
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.localPosition += new Vector3(0.05f, 0, 0);
+            this.transform.localPosition += new Vector3(0.01f, 0, 0);
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
-            this.transform.localPosition += new Vector3(0, -0.05f, 0);
+            this.transform.localPosition += new Vector3(0, -0.01f, 0);
         }
 
         // sprite and music changes 
@@ -114,16 +116,16 @@ public class Player_Movement : MonoBehaviour
         // solas audio triggers
         if (collider.gameObject.CompareTag("solas_market"))
         {
-            Debug.Log("In Market");
+            
             market.PlayOneShot(_market, 0.75f);
         }
         else if (collider.gameObject.CompareTag("farm"))
         {
-            farm.PlayOneShot(_farm, 0.75f);
+            farm.PlayOneShot(_farm, 0.65f);
         }
         else if (collider.gameObject.CompareTag("forest"))
         {
-            forest.PlayOneShot(_forest, 0.75f);
+            forest.PlayOneShot(_forest, 0.60f);
         }
         else if (collider.gameObject.CompareTag("open_boundary") || collider.gameObject.CompareTag("tenga_boudary") || collider.gameObject.CompareTag("auris_boundary"))
         {
@@ -135,43 +137,43 @@ public class Player_Movement : MonoBehaviour
         // tenga audio triggers
         if(collider.gameObject.CompareTag("tenga_market"))
         {
-            Debug.Log("In Market");
+           
             market.PlayOneShot(_market, 0.75f);
         }
         else if (collider.gameObject.CompareTag("beach"))
         {
-            beach.PlayOneShot(_beach, 0.75f);
+            beach.PlayOneShot(_beach, 0.60f);
         }
         else if (collider.gameObject.CompareTag("coast"))
         {
-            coast.PlayOneShot(_coast, 0.75f);
+            coast.PlayOneShot(_coast, 0.65f);
         }
         else if (collider.gameObject.CompareTag("open_boundary") || collider.gameObject.CompareTag("solas_boudary") || collider.gameObject.CompareTag("auris_boundary"))
         {
             market.Stop();
-            farm.Stop();
-            forest.Stop();
+            beach.Stop();
+            coast.Stop();
         }
 
         // auris audio triggers
         if(collider.gameObject.CompareTag("auris_market"))
         {
-            Debug.Log("In Market");
+           
             market.PlayOneShot(_market, 0.75f);
         }
         else if (collider.gameObject.CompareTag("arena"))
         {
             arena.PlayOneShot(_arena, 0.75f);
         }
-       /* else if (collider.gameObject.CompareTag("forest"))
+        else if (collider.gameObject.CompareTag("desert"))
         {
-            forest.PlayOneShot(_forest, 0.75f);
-        }*/
+            desert.PlayOneShot(_desert, 0.75f);
+        }
         else if (collider.gameObject.CompareTag("open_boundary") || collider.gameObject.CompareTag("tenga_boudary") || collider.gameObject.CompareTag("solas_boundary"))
         {
             market.Stop();
-            farm.Stop();
-            forest.Stop();
+            arena.Stop();
+            desert.Stop();
         }
 
     }

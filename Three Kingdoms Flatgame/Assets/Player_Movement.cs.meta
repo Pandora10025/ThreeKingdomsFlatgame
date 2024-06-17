@@ -5,10 +5,24 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - player_icon: {instanceID: 0}
-  - tenga_icon: {instanceID: 0}
-  - solas_icon: {instanceID: 0}
-  - auris_icon: {instanceID: 0}
-  - camPos: {fileID: 6729905720332483736, guid: 623eb99ab27f5354f966d3298200d5ba, type: 3}
+  - tenga_icon: {fileID: 21300000, guid: 3a89fea88d6561740a7907d18cb66f02, type: 3}
+  - solas_icon: {fileID: 21300000, guid: b8c30661f316b154bb4b1d7f8c7ebed9, type: 3}
+  - auris_icon: {fileID: 21300000, guid: 1302215912816f744a429de44af6f2c9, type: 3}
+  - original: {fileID: 21300000, guid: 50cce2ed4c6b4cc4394362c822fff916, type: 3}
+  - _forest: {fileID: 8300000, guid: 9d64fb1110ca8f242a61b63ffa063b26, type: 3}
+  - _farm: {fileID: 8300000, guid: 89697d7f9ffd0e7489b870edbad7be03, type: 3}
+  - _coast: {fileID: 8300000, guid: fb893503a6a46884c9f78c1b0bf92c8e, type: 3}
+  - _beach: {fileID: 8300000, guid: f03327b3c3b29b649bdadd998cb410eb, type: 3}
+  - _arena: {fileID: 8300000, guid: 21ebd03d672e2f645932b32f9a87b742, type: 3}
+  - _market: {fileID: 8300000, guid: 4d0d4c98d0b03bb4aadf5ad94ff6ba0b, type: 3}
+  - _desert: {fileID: 8300000, guid: 4e4ae07f0ae7d5944aff0ad0cb8524c0, type: 3}
+  - forest: {instanceID: 0}
+  - coast: {instanceID: 0}
+  - beach: {instanceID: 0}
+  - farm: {instanceID: 0}
+  - arena: {instanceID: 0}
+  - market: {instanceID: 0}
+  - desert: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
